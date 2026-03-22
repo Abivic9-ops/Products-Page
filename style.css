@@ -1,9 +1,205 @@
+/* Importing Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* The Styles that are applied to the whole page */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+body {
+    font-family: "poppins", sans-serif;
+    background-color:#3f181c;
+    display: flex;
+    -webkit-font-smoothing: antialiased;
+    color: #ffffff;
+}
 
 
 
+/* Sidebar */
+.sidebar {
+    width: 200px;
+    background-color:  #3f181c;
+    border-right: white;
+    padding: 2.5rem 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    flex-shrink: 0;
+    
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    text-decoration: none;
+    color: white;
+}
+.logo span {
+    font-weight: 800;
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+}
+
+.nav-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.nav-label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 1.5px;
+    margin-bottom: 0.5rem;
+    padding-left: 1rem;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.9rem 1rem;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: all 0.2s var(--ease);
+    font-weight: 500;
+}
+
+.nav-link i {
+    font-size: 1.1rem;
+    width: 20px;
+    text-align: center;
+}
+
+.nav-link:hover {
+    color: white;
+    /* background: rgba(255, 255, 255, 0.05); */
+}
+
+.nav-link.active {
+    /* background: grey; */
+    color: white;
+    box-shadow: 0 8px 16px var(--accent-glow);
+}
 
 
 
+/* Main Content */
+.main-content {
+    flex: 1;
+    padding-bottom: 5rem;
+}
+
+header {
+    height: 100px;
+    padding: 0 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: #641c23;
+    backdrop-filter: blur(20px);
+}
+
+.search-bar {
+  background: #fff;
+  border-radius: 10px;
+    padding: 0.7rem 1.2rem;
+    width: 340px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    transition: all 0.3s var(--ease);
+}
+
+.search-bar:focus-within {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.2);
+    width: 400px;
+}
+
+.search-bar input {
+    background: none;
+    border: none;
+    color: white;
+    outline: none;
+    width: 100%;
+    font-family: inherit;
+    font-size: 0.95rem;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.user-profile span {
+    font-weight: 600;
+    color: #D8C3A5;
+}
+
+.user-profile i {
+    color:#D8C3A5;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.user-profile i:hover {
+    color: white;
+}
+
+.avatar {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: #d3e3fd;
+    border: 3px solid rgba(255, 255, 255, 0.05);
+}
+
+.order-btn{
+      padding: 15px 35px;
+    background: #37a1f2;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 2s;
+    border: none;
+    margin-top: 10px;
+}
+
+.ordernow-btn:hover{
+ background: transparent;
+    box-shadow: 0 0 20px #38bdf8;
+    transform: scale(1.1);
+    color: #fff;
+    border: #37a1f2;
+
+}
+
+
+h1{
+    font-size: 35px;
+    padding: 10px;
+    text-align: left;
+}
+
+.sub-title{
+    font-size: 30px;
+}
 
 .three-columns {
     display: grid;
@@ -15,4 +211,20 @@
 .product img {
     width: 20em;
     height: 20em;
+}
+
+.add-to-cart{
+    background: #37a1f2;
+    width: 200px;
+    padding: 10px 6px;
+    border-radius: 30px;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.container{
+    padding: 10px;
+    text-align: center;
 }
