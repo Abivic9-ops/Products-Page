@@ -232,13 +232,21 @@ h1{
     font-size: 30px;
 }
 
-.three-columns {
+#three-columns {
     display: grid;
     gap: 20px;
     grid-template-columns: repeat(3, 1fr);
     padding: 20px;
 }
 
+
+.product-container{
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
 .product img {
     width: 20em;
     height: 20em;
@@ -255,15 +263,37 @@ h1{
 
 }
 
-
-
-.container{
-    padding: 10px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    margin: 5px;
+.action-btns{
+    display:flex ;
+    gap: 55px;
+margin-top: 10px;
+justify-content: space-between;
 }
 
 
+
 /* styling of the button */
+
+.btn-add {
+    padding: 25px ;
+    transform: translateY(8px);
+    width: 36px;
+    height: 36px;
+    border-radius: 20px;
+    background: #37a1f2;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    transition: all 0.2s;
+}
+
+
+.btn-add:hover{
+ background: transparent;
+    box-shadow: 0 0 20px #38bdf8;
+    transform: scale(1.1);
+    color: #fff;
+    border: #37a1f2;  
+}
