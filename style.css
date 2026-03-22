@@ -1,0 +1,18 @@
+
+
+
+
+
+
+
+.three-columns {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 20px;
+}
+
+.product img {
+    width: 20em;
+    height: 20em;
+}
