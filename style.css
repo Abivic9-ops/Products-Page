@@ -174,7 +174,7 @@ header {
 
 #checkout-btn{
        padding: 15px 30px;
-    background: #37a1f2;
+    background: #f49b23;
     border-radius: 20px;
     text-decoration: none;
     transition: 2s;
@@ -185,7 +185,7 @@ header {
 
 .order-btn{
       padding: 15px 30px;
-    background: #37a1f2;
+    background: #f49b23;
     border-radius: 25px;
     text-decoration: none;
     transition: 2s;
@@ -195,17 +195,17 @@ header {
 
 .order-btn:hover{
  background: transparent;
-    box-shadow: 0 0 20px #38bdf8;
+    box-shadow: 0 0 20px #f49b23;
     transform: scale(1.1);
     color: #fff;
-    border: #37a1f2;
+    border: #f49b23;
 
 }
 
 .cart-btn{
     display: flex;
        padding: 15px 30px;
-    background: #37a1f2;
+    background: #f49b23;
     border-radius: 25px;
     text-decoration: none;
     transition: 2s;
@@ -219,7 +219,12 @@ header {
 .cart-btn:hover{
     scale: 1.1;
     opacity: 0.5;
-    color: #000;
+    color: #fff;
+background: transparent;
+    box-shadow: 0 0 20px #38bdf8;
+    transform: scale(1.1);
+    border:#f49b23;  
+
 }
 
 
@@ -247,14 +252,24 @@ h1{
     justify-content: center;
     align-items: center;
     margin: 5px;
+    transition: .5s;
+    /* border: 2px solid; */
+    box-sizing: border-box;
 }
 .product img {
     width: 20em;
     height: 20em;
+    border-radius: 20px;
 }
-
+.product-container:hover{
+    border:2x solid #fff ;
+    box-sizing: border-box;
+    border-radius: 30px;
+    transform: translateY(10px);
+    opacity: 0.6;
+}
 .add-to-cart{
-    background: #37a1f2;
+    background: #f49b23;
     width: 200px;
     padding: 10px 6px;
     border-radius: 30px;
@@ -263,6 +278,7 @@ h1{
     margin-bottom: 10px;
 
 }
+
 
 .action-btns{
     display:flex ;
@@ -281,7 +297,7 @@ justify-content: space-between;
     width: 36px;
     height: 36px;
     border-radius: 20px;
-    background: #37a1f2;
+    background: #f49b23;
     display: flex;
     text-align: center;
     align-items: center;
@@ -296,7 +312,7 @@ justify-content: space-between;
     box-shadow: 0 0 20px #38bdf8;
     transform: scale(1.1);
     color: #fff;
-    border: #37a1f2;  
+    border:#f49b23;  
 }
 
 
